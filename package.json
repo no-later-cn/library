@@ -1,0 +1,25 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "\"图书App实现start\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "start-l"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feikool/library.git"
+  },
+  "keywords": [
+    "library"
+  ],
+  "author": "\"feikool\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feikool/library/issues"
+  },
+  "homepage": "https://github.com/feikool/library#readme",
+  "devDependencies": {
+    "jquery": "^1.11.1"
+  }
+}
