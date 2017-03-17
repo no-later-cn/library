@@ -1,127 +1,50 @@
-@media screen and (min-width: 320px) {
-  html {
-    font-size: 42.66667px; } }
+@import url("../../../node_modules/base_css/base.css");
+.header {
+  width: 100%;
+  height: 1.4rem;
+  background: #29A6DC; }
 
-@media screen and (min-width: 360px) {
-  html {
-    font-size: 48px; } }
+.banner {
+  width: 100%;
+  height: 4.83rem; }
+  .banner .word {
+    position: relative;
+    height: auto;
+    display: none; }
+    .banner .word h1 {
+      position: absolute;
+      top: 0.95rem;
+      left: 0.85rem;
+      font-size: 35px; }
+    .banner .word span {
+      position: absolute;
+      top: 0.95rem;
+      left: 0.85rem;
+      font-size: 17px; }
+  .banner ul {
+    width: 1005;
+    position: relative;
+    height: 100%; }
+    .banner ul li {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: url(../../../node_modules/base_images/st_03.png) no-repeat; }
 
-@media screen and (min-width: 375px) {
-  html {
-    font-size: 48px; } }
-
-@media screen and (min-width: 412px) {
-  html {
-    font-size: 54.93333px; } }
-
-@media screen and (min-width: 414px) {
-  html {
-    font-size: 55.2px; } }
-
-@media screen and (min-width: 600px) {
-  html {
-    font-size: 55.2px; } }
-
-@media screen and (min-width: 680px) {
-  html {
-    font-size: 55.2px; } }
-
-@media screen and (min-width: 750px) {
-  html {
-    font-size: 100px; } }
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, input {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-weight: normal;
-  vertical-align: baseline;
-  font-style: normal; }
-
-article, aside, details, figcaption, figure,
-footer, header, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/* custom */
-a {
-  color: #7e8c8d;
-  text-decoration: none;
-  -webkit-backface-visibility: hidden; }
-
-li {
-  list-style: none; }
-
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px; }
-
-::-webkit-scrollbar-track-piece {
-  background-color: rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 6px; }
-
-::-webkit-scrollbar-thumb:vertical {
-  height: 5px;
-  background-color: rgba(125, 125, 125, 0.7);
-  -webkit-border-radius: 6px; }
-
-::-webkit-scrollbar-thumb:horizontal {
-  width: 5px;
-  background-color: rgba(125, 125, 125, 0.7);
-  -webkit-border-radius: 6px; }
-
-html, body {
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%; }
-
-body {
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: transparent; }
-
-@font-face {
-  font-family: 'PingFang Bold';
-  src: url("../base_fonts/PingFang Bold.ttf"); }
-
-@font-face {
-  font-family: 'PingFang ExtraLight';
-  src: url("../base_fonts/PingFang ExtraLight.ttf"); }
-
-@font-face {
-  font-family: 'PingFang Heavy';
-  src: url("../base_fonts/PingFang Heavy.ttf"); }
-
-@font-face {
-  font-family: 'PingFang Light';
-  src: url("../base_fonts/PingFang Light.ttf"); }
-
-@font-face {
-  font-family: 'PingFang Medium';
-  src: url("../base_fonts/PingFang Medium.ttf"); }
-
-@font-face {
-  font-family: 'PingFang Regular';
-  src: url("../base_fonts/PingFang Regular.ttf"); }
+  .footer .nav {
+    width: 100%;
+    height: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+    .footer .nav .list {
+      height: 100%;
+      width: 100%; }

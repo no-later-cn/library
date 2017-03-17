@@ -6,8 +6,63 @@
     height:1.4rem;
     background: #29A6DC;
 }
+////////////////////////////////////////////
 .banner{
     width:100%;
     height:4.83rem;
-    background: #fff;
+    //background: #fff;
+.word{
+    position: relative;
+    height:auto;
+    display: none;
+    h1{
+        position: absolute;
+        top:0.95rem;
+        left:0.85rem;
+        font-size: 35px;
+
+    }
+    span{
+        position: absolute;
+        top:0.95rem;
+        left:0.85rem;
+        font-size: 17px;
+    }
+}
+    ul{
+        width:1005;
+        position: relative;
+        height:100%;
+        li{
+            width:100%;
+            position: absolute;
+            top:0;
+            left:0;
+            height:100%;
+            background:url(../../../node_modules/base_images/st_03.png)no-repeat;
+        }
+    }
+}
+///////////////////////////////////////////
+.main{
+
+}
+/////////////////////////////////////////
+.footer{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    .nav{
+        width:100%;
+        height:1rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:space-between;
+        .list{
+            height:100%;
+            width:100%;
+        }
+    }
 }
