@@ -1,4 +1,7 @@
 @import url("../../../node_modules/base_css/base.css");
+html {
+  list-style: none; }
+
 .header {
   position: fixed;
   top: 0;
