@@ -66,7 +66,7 @@ html {
 
 .seleceted {
   display: none; }
-  .seleceted.next {
+  .seleceted.nexts {
     display: block; }
   .seleceted::before {
     content: '';
@@ -250,7 +250,7 @@ html {
 
 .list {
   display: none; }
-  .list.next {
+  .list.nexts {
     display: block; }
   .list::before {
     content: '';
@@ -373,7 +373,7 @@ html {
   display: none;
   width: 100%;
   height: auto; }
-  .classify.next {
+  .classify.nexts {
     display: block; }
   .classify::before {
     content: '';
