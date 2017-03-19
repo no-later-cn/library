@@ -77,8 +77,12 @@ html{
     }
 }
 ////////////////////////////////////////
+
 .seleceted{
-    //display: none;
+    display: none;
+    &.next{
+    display: block;
+}
     &::before{
         content: '';
         display: block;
@@ -312,6 +316,9 @@ html{
 ////////////////////////////////////////
 .list{
     display: none;
+    &.next{
+        display: block;
+    }
     &::before{
         content: '';
         display: block;
@@ -456,6 +463,9 @@ html{
     display: none;
     width: 100%;
     height: auto;
+    &.next{
+        display: block;
+    }
     &::before{
         content: '';
         display: block;

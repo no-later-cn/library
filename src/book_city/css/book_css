@@ -64,194 +64,193 @@ html {
     margin: 0 0.2rem;
     background: url(../../../node_modules/base_images/st_02.png) no-repeat center/cover; }
 
-.seleceted {
-  display: none; }
-  .seleceted.next {
-    display: block; }
-  .seleceted::before {
-    content: '';
-    display: block;
+.next {
+  display: block; }
+
+.seleceted::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1rem; }
+
+.seleceted .banner {
+  width: 100%;
+  height: 5.05rem;
+  position: relative; }
+  .seleceted .banner .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    height: 1rem; }
-  .seleceted .banner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; }
+    .seleceted .banner .shadow .lists {
+      width: 8.24%;
+      height: 0.08rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .seleceted .banner .shadow .lists li {
+        border: 1px solid #0090FF;
+        border-radius: 50%;
+        width: 0.08rem;
+        background: #fff;
+        height: 100%; }
+        .seleceted .banner .shadow .lists li.active {
+          background: #0090FF; }
+  .seleceted .banner .liss {
     width: 100%;
-    height: 5.05rem;
-    position: relative; }
-    .seleceted .banner .shadow {
+    position: relative;
+    height: 4.83rem; }
+    .seleceted .banner .liss li {
+      width: 100%;
       position: absolute;
       top: 0;
       left: 0;
       height: 100%;
-      width: 100%;
+      background: url(../../../node_modules/base_images/st_03.png) no-repeat center/cover; }
+      .seleceted .banner .liss li .word {
+        position: relative;
+        height: auto;
+        display: none; }
+        .seleceted .banner .liss li .word h1 {
+          position: absolute;
+          top: 0.95rem;
+          left: 0.85rem;
+          font-size: 0.35rem; }
+        .seleceted .banner .liss li .word span {
+          position: absolute;
+          top: 0.95rem;
+          left: 0.85rem;
+          font-size: 0.17rem; }
+
+.seleceted .main {
+  flex: 1;
+  height: auto; }
+  .seleceted .main .title {
+    width: 2.34rem;
+    height: 0.55rem;
+    display: flex;
+    flex-wrap: nowrap; }
+    .seleceted .main .title .logo {
+      width: 0.6rem;
+      height: 100%;
+      background: url(../../../node_modules/base_images/st_04.png) no-repeat right top/cover;
+      background-size: 0.3rem 0.3rem; }
+    .seleceted .main .title .bar {
+      width: 1.74rem;
+      height: 100%;
       display: flex;
-      align-items: flex-end;
-      justify-content: center; }
-      .seleceted .banner .shadow .lists {
-        width: 8.24%;
-        height: 0.08rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; }
-        .seleceted .banner .shadow .lists li {
-          border: 1px solid #0090FF;
-          border-radius: 50%;
-          width: 0.08rem;
-          background: #fff;
-          height: 100%; }
-          .seleceted .banner .shadow .lists li.active {
-            background: #0090FF; }
-    .seleceted .banner .liss {
-      width: 100%;
-      position: relative;
-      height: 4.83rem; }
-      .seleceted .banner .liss li {
+      flex-wrap: wrap;
+      align-content: space-between; }
+      .seleceted .main .title .bar .rtop {
         width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        background: url(../../../node_modules/base_images/st_03.png) no-repeat center/cover; }
-        .seleceted .banner .liss li .word {
-          position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-end; }
+        .seleceted .main .title .bar .rtop h2 {
+          font-size: 0.27rem;
+          font-family: 'PingFang Medium',sans-serif; }
+        .seleceted .main .title .bar .rtop ul {
+          width: 0.18rem;
           height: auto;
-          display: none; }
-          .seleceted .banner .liss li .word h1 {
-            position: absolute;
-            top: 0.95rem;
-            left: 0.85rem;
-            font-size: 0.35rem; }
-          .seleceted .banner .liss li .word span {
-            position: absolute;
-            top: 0.95rem;
-            left: 0.85rem;
-            font-size: 0.17rem; }
-  .seleceted .main {
-    flex: 1;
-    height: auto; }
-    .seleceted .main .title {
-      width: 2.34rem;
-      height: 0.55rem;
-      display: flex;
-      flex-wrap: nowrap; }
-      .seleceted .main .title .logo {
-        width: 0.6rem;
-        height: 100%;
-        background: url(../../../node_modules/base_images/st_04.png) no-repeat right top/cover;
-        background-size: 0.3rem 0.3rem; }
-      .seleceted .main .title .bar {
-        width: 1.74rem;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between; }
-        .seleceted .main .title .bar .rtop {
-          width: 100%;
           display: flex;
-          flex-wrap: nowrap;
-          justify-content: space-around;
-          align-items: flex-end; }
-          .seleceted .main .title .bar .rtop h2 {
-            font-size: 0.27rem;
-            font-family: 'PingFang Medium',sans-serif; }
-          .seleceted .main .title .bar .rtop ul {
-            width: 0.18rem;
-            height: auto;
-            display: flex;
-            justify-content: space-between; }
-            .seleceted .main .title .bar .rtop ul li {
-              width: 0.04rem;
-              height: 0.04rem;
-              border-radius: 50%; }
-              .seleceted .main .title .bar .rtop ul li:nth-child(1) {
-                background: #FE58AA; }
-              .seleceted .main .title .bar .rtop ul li:nth-child(2) {
-                background: #58FEDD; }
-              .seleceted .main .title .bar .rtop ul li:nth-child(3) {
-                background: #FFC63E; }
-        .seleceted .main .title .bar span {
-          padding-left: 0.12rem;
-          font-family: 'PingFang Regular',sans-serif;
-          font-size: 0.15rem; }
-    .seleceted .main .content {
-      width: 100%; }
-      .seleceted .main .content .top {
-        width: 100%;
-        height: 3.72rem;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around; }
-        .seleceted .main .content .top li {
-          width: 24%;
-          height: 100%;
-          display: flex;
-          align-content: flex-end;
-          flex-wrap: wrap; }
-          .seleceted .main .content .top li .cover {
-            width: 100%;
-            height: 68.28%; }
-          .seleceted .main .content .top li .book-title {
-            width: 100%;
-            height: 0.8rem;
-            display: flex;
-            flex-flow: row wrap;
-            align-items: flex-end; }
-            .seleceted .main .content .top li .book-title h4 {
-              font-family: 'PingFang Regular',sans-serif;
-              font-size: 0.2rem; }
-            .seleceted .main .content .top li .book-title span {
-              font-family: 'PingFang Regular',sans-serif;
-              font-size: 0.17rem;
-              color: #999; }
-          .seleceted .main .content .top li:nth-child(1) .cover {
-            background: url(../../../node_modules/base_images/st_06.png) no-repeat center/contain; }
-          .seleceted .main .content .top li:nth-child(2) .cover {
-            background: url(../../../node_modules/base_images/st_06.png) no-repeat center/contain; }
-          .seleceted .main .content .top li:nth-child(3) .cover {
-            background: url(../../../node_modules/base_images/st_06.png) no-repeat center/contain; }
-      .seleceted .main .content .bottom {
-        width: 100%;
-        height: 4.05rem;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around; }
-        .seleceted .main .content .bottom li {
-          width: 24%;
-          height: 100%;
-          display: flex;
-          align-content: flex-end;
-          flex-wrap: wrap; }
-          .seleceted .main .content .bottom li .cover {
-            width: 100%;
-            height: 68.28%; }
-          .seleceted .main .content .bottom li .book-title {
-            width: 100%;
-            height: 0.8rem;
-            display: flex;
-            flex-flow: row wrap;
-            align-items: flex-end; }
-            .seleceted .main .content .bottom li .book-title h4 {
-              font-family: 'PingFang Regular',sans-serif;
-              font-size: 0.2rem; }
-            .seleceted .main .content .bottom li .book-title span {
-              font-family: 'PingFang Regular',sans-serif;
-              font-size: 0.17rem;
-              color: #999; }
-          .seleceted .main .content .bottom li:nth-child(1) .cover {
-            background: url(../../../node_modules/base_images/st_07.png) no-repeat center/contain; }
-          .seleceted .main .content .bottom li:nth-child(2) .cover {
-            background: url(../../../node_modules/base_images/st_07.png) no-repeat center/contain; }
-          .seleceted .main .content .bottom li:nth-child(3) .cover {
-            background: url(../../../node_modules/base_images/st_07.png) no-repeat center/contain; }
-    .seleceted .main::after {
-      content: '';
+          justify-content: space-between; }
+          .seleceted .main .title .bar .rtop ul li {
+            width: 0.04rem;
+            height: 0.04rem;
+            border-radius: 50%; }
+            .seleceted .main .title .bar .rtop ul li:nth-child(1) {
+              background: #FE58AA; }
+            .seleceted .main .title .bar .rtop ul li:nth-child(2) {
+              background: #58FEDD; }
+            .seleceted .main .title .bar .rtop ul li:nth-child(3) {
+              background: #FFC63E; }
+      .seleceted .main .title .bar span {
+        padding-left: 0.12rem;
+        font-family: 'PingFang Regular',sans-serif;
+        font-size: 0.15rem; }
+  .seleceted .main .content {
+    width: 100%; }
+    .seleceted .main .content .top {
       width: 100%;
-      height: 1.48rem;
-      display: block; }
+      height: 3.72rem;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around; }
+      .seleceted .main .content .top li {
+        width: 24%;
+        height: 100%;
+        display: flex;
+        align-content: flex-end;
+        flex-wrap: wrap; }
+        .seleceted .main .content .top li .cover {
+          width: 100%;
+          height: 68.28%; }
+        .seleceted .main .content .top li .book-title {
+          width: 100%;
+          height: 0.8rem;
+          display: flex;
+          flex-flow: row wrap;
+          align-items: flex-end; }
+          .seleceted .main .content .top li .book-title h4 {
+            font-family: 'PingFang Regular',sans-serif;
+            font-size: 0.2rem; }
+          .seleceted .main .content .top li .book-title span {
+            font-family: 'PingFang Regular',sans-serif;
+            font-size: 0.17rem;
+            color: #999; }
+        .seleceted .main .content .top li:nth-child(1) .cover {
+          background: url(../../../node_modules/base_images/st_06.png) no-repeat center/contain; }
+        .seleceted .main .content .top li:nth-child(2) .cover {
+          background: url(../../../node_modules/base_images/st_06.png) no-repeat center/contain; }
+        .seleceted .main .content .top li:nth-child(3) .cover {
+          background: url(../../../node_modules/base_images/st_06.png) no-repeat center/contain; }
+    .seleceted .main .content .bottom {
+      width: 100%;
+      height: 4.05rem;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around; }
+      .seleceted .main .content .bottom li {
+        width: 24%;
+        height: 100%;
+        display: flex;
+        align-content: flex-end;
+        flex-wrap: wrap; }
+        .seleceted .main .content .bottom li .cover {
+          width: 100%;
+          height: 68.28%; }
+        .seleceted .main .content .bottom li .book-title {
+          width: 100%;
+          height: 0.8rem;
+          display: flex;
+          flex-flow: row wrap;
+          align-items: flex-end; }
+          .seleceted .main .content .bottom li .book-title h4 {
+            font-family: 'PingFang Regular',sans-serif;
+            font-size: 0.2rem; }
+          .seleceted .main .content .bottom li .book-title span {
+            font-family: 'PingFang Regular',sans-serif;
+            font-size: 0.17rem;
+            color: #999; }
+        .seleceted .main .content .bottom li:nth-child(1) .cover {
+          background: url(../../../node_modules/base_images/st_07.png) no-repeat center/contain; }
+        .seleceted .main .content .bottom li:nth-child(2) .cover {
+          background: url(../../../node_modules/base_images/st_07.png) no-repeat center/contain; }
+        .seleceted .main .content .bottom li:nth-child(3) .cover {
+          background: url(../../../node_modules/base_images/st_07.png) no-repeat center/contain; }
+  .seleceted .main::after {
+    content: '';
+    width: 100%;
+    height: 1.48rem;
+    display: block; }
 
 .list {
   display: none; }
-  .list.next {
-    display: block; }
   .list::before {
     content: '';
     display: block;
@@ -373,8 +372,6 @@ html {
   display: none;
   width: 100%;
   height: auto; }
-  .classify.next {
-    display: block; }
   .classify::before {
     content: '';
     display: block;
