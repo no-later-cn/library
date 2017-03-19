@@ -1,0 +1,41 @@
+@mixin rectangle($width,$height){
+	width:$width;height:$height;
+}
+@mixin circular($size){
+	@include rectangle($size,$size);
+	border-radius:50%;
+}
+@mixin bg(){
+	$r:floor(random()*256);
+	$g:floor(random()*256);
+	$b:floor(random()*256);
+	$a:floor(random()*4+3)/10;
+	$color:rgba($r,$g,$b,$a);
+	background:$color;
+}
+@mixin lr(){
+  position: absolute;
+  left:0;
+  right:0;
+  margin:auto;
+}
+@mixin center(){
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+}
+@mixin rect($width,$height){
+  width: $width;
+  height:$height;
+}
+@mixin dice(){
+  margin: 34px;
+  background: #E7E7E7;
+  border-radius:20px;
+  float: left;
+  box-shadow:8px 8px 0 #D7D7D7,8px -8px 0 #fff, -8px 8px 0 #D7D7D7,-8px -8px 0 #fff;
+}
+
