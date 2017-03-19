@@ -16,7 +16,7 @@ html {
   .header .flide {
     flex: 1;
     display: flex;
-    justify-content: flex-end; }
+    justify-content: center; }
     .header .flide .back {
       width: 5.71rem;
       height: 0.84rem;

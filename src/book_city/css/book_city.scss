@@ -16,7 +16,7 @@ html{
     .flide{
         flex:1;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         .back{
             width: 5.71rem;
             height:0.84rem;
@@ -31,7 +31,6 @@ html{
     border-radius: 0.33rem;
     background: #2A3441;
     position: relative;
-
     &.active{
         border:1px solid #fff;
         border-radius: 0.33rem;
