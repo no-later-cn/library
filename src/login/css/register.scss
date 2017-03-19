@@ -4,7 +4,7 @@ body,html{
   background: #f2f2f2;
 }
 header{
-  height:37.18%;
+  height:23.04%;
   background:#29a6dc;
   .title{
     flex:1;
@@ -33,7 +33,8 @@ header{
     font-size: 0.32rem;
   }
   .logo{
-    height:3.65rem;
+    height:calc(100% - 1.1rem);
+    flex:1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,36 +42,21 @@ header{
     font-family: 'PingFang Bold';
   }
 }
-
-aside{
-  width: 100%;
-  height:20%;
-  font-size: 0.22rem;
+//71.26+5.7
+main{
+  width:100%;
+  height:76.96%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color:#0a196b;
-  p{
-    line-height: 1.5;
-  }
-  p:nth-child(2){
-    text-align: right;
-  }
-}
-
-main{
-  height:36.75%;
-  display: flex;
-  flex: 1;
   form{
     width:100%;
-    height:100%;
+    height:94%;
     display: flex;
-    flex:1;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    .name,.pass{
+    justify-content: space-around;
+    align-content: space-around;
+    .name,.pass,.tel{
       width:6.06rem;
       height:0.88rem;
       background: #fff;
@@ -92,6 +78,9 @@ main{
     }
     .pass i{
       background:url("../../../node_modules/base_images/icon_password.png") no-repeat center/0.45rem;
+    }
+    .tel i{
+           background:url("../../../node_modules/base_images/icon_phone.png") no-repeat center/0.45rem;
     }
     .Retrieve{
       width:70%;
@@ -154,6 +143,36 @@ main{
           line-height: 0.68rem;
           font-size: 0.28rem;
         }
+      }
+    }
+    .yzm{
+      width:6.06rem;
+      height:0.88rem;
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      input,a{
+        width:2.08rem;
+        border-radius: 0.5rem;
+        height:100%;
+        outline: none;
+        border:1px solid #3a91fd;
+        background:#fff;
+        text-align: center;
+        font-size: 0.28rem;
+        font-family: 'PingFang Medium';
+        -webkit-font-smoothing:antialiased;
+        h4{
+          margin-top:0.2rem;
+          color:#3abffd;
+          display: block;
+        }
+        p{
+          font-size: 0.24rem;
+        }
+      }
+      a{
+        width:3.84rem;
       }
     }
   }
