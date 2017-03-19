@@ -73,3 +73,76 @@ main {
       height: 100%;
       margin-left: 0.2rem;
       background: url("../../../node_modules/base_images/st_05.png") no-repeat left bottom/0.3rem; }
+  main .list {
+    width: 100%;
+    height: 100%; }
+    main .list .item {
+      width: 93.6%;
+      box-sizing: border-box;
+      height: 1.68rem;
+      margin: 0.17rem 0.22rem;
+      border-radius: 0.05rem;
+      background: #fff;
+      display: flex; }
+    main .list .img {
+      width: 2.46rem;
+      height: 1.52rem;
+      padding: 0.1rem 0.1rem;
+      border-right: 1px dashed #c7c7c7; }
+      main .list .img img {
+        width: 100%;
+        height: 100%; }
+    main .list .item-con {
+      flex: 1;
+      display: flex;
+      box-sizing: border-box;
+      padding: 0 0 0.1rem 0.16rem;
+      flex-direction: column;
+      align-content: space-between; }
+      main .list .item-con h3 {
+        line-height: 1.8;
+        font-size: 0.28rem;
+        color: #a5a5a5;
+        padding-right: 0.54rem; }
+      main .list .item-con .content {
+        color: #999999;
+        font-size: 0.22rem;
+        line-height: 1.5;
+        padding-right: 0.54rem; }
+    main .list .assist {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between; }
+      main .list .assist p {
+        overflow: hidden;
+        display: flex;
+        width: 60%;
+        align-items: center; }
+        main .list .assist p i {
+          width: 20%;
+          height: 100%;
+          display: block;
+          background: url("../../../node_modules/base_images/icon_publish.png") no-repeat 50%/0.24rem; }
+        main .list .assist p span {
+          width: 80%;
+          height: 0.24rem;
+          font-size: 0.16rem;
+          color: #999999;
+          line-height: 0.24rem; }
+      main .list .assist p:nth-child(2) {
+        width: 40%;
+        float: right; }
+    @media screen and (max-width: 460px) {
+      main .list .item-con .content {
+        padding-right: 0.2rem;
+        line-height: 1.3; }
+      main .list .item-con .assist p span {
+        height: 100%;
+        line-height: 2.4; } }
+    @media screen and (max-width: 360px) {
+      main .list .item-con .content {
+        padding-right: 0.2rem; }
+      main .list .item-con .assist p span {
+        height: 100%;
+        line-height: 1.8; } }
