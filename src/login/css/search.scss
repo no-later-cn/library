@@ -87,13 +87,14 @@ main{
     }
   }
   .list{
-    width:100%;
-    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
     .item{
       width:93.6%;
       box-sizing: border-box;
       height:1.68rem;
-      margin:0.17rem 0.22rem;
+      margin:0.085rem 0.22rem;
       border-radius: 0.05rem;
       background:#fff;
       display: flex;
@@ -110,18 +111,21 @@ main{
     }
     .item-con{
       flex:1;
+      height:100%;
       display: flex;
       box-sizing: border-box;
       padding:0 0 0.1rem 0.16rem;
       flex-direction: column;
-      align-content: space-between;
+      justify-content: space-between;
       h3{
-        line-height: 1.8;
-        font-size: 0.28rem;
+        height:auto;
+        line-height: 1.5;
+        font-size: 0.3rem;
         color:#a5a5a5;
         padding-right: 0.54rem;
       }
       .content{
+        height:auto;
         color:#999999;
         font-size: 0.22rem;
         line-height: 1.5;
@@ -130,42 +134,35 @@ main{
     }
     .assist{
       width:100%;
-      height:100%;
+      height:25%;
       display: flex;
       justify-content: space-between;
+      align-content: space-between;
       p{
         overflow: hidden;
-        display: flex;
+        height:100%;
         width:60%;
+        display: flex;
         align-items: center;
+        align-content: space-between;
         i{
           width:20%;
           height:100%;
-          display: block;
           background:url("../../../node_modules/base_images/icon_publish.png") no-repeat 50%/0.24rem
         }
         span{
           width:80%;
-          height:0.24rem;
+          height:100%;
           font-size: 0.16rem;
           color: #999999;
-          line-height: 0.24rem;
+          line-height: 1.6;
         }
       }
       p:nth-child(2){
         width:40%;
         float:right;
-      }
-    }
-    @media screen and (max-width: 460px) {
-      .item-con {
-        .content{
-          padding-right: 0.2rem;
-          line-height: 1.3;
-        }
-        .assist p span{
-          height:100%;
-          line-height: 2.4;
+        i{
+          background:url("../../../node_modules/base_images/icon_address.png") no-repeat 50%/0.24rem
         }
       }
     }
@@ -173,10 +170,7 @@ main{
       .item-con {
         .content{
           padding-right: 0.2rem;
-        }
-        .assist p span{
-          height:100%;
-          line-height: 1.8;
+          line-height: 1.3;
         }
       }
     }

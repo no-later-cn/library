@@ -1,0 +1,377 @@
+@import url(../node_modules/base_css/base.css);
+body, html {
+  height: 100%;
+  background: #f2f2f2;
+  font-family: 'PingFang Medium'; }
+
+.row::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+header {
+  height: 1.4rem;
+  width: 100%;
+  background: #29a6dc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999; }
+  header .title {
+    width: 100%;
+    height: 100%;
+    padding-top: 0.4rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  header .input {
+    width: 60%;
+    text-align: right; }
+    header .input span {
+      font-size: 0.36rem;
+      color: #fff; }
+    header .input p {
+      width: 100%;
+      text-align: right;
+      color: #a3e3ff;
+      font-size: 0.18rem;
+      line-height: 1.5; }
+  header p.yy {
+    width: 1.03rem;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header p.yy a {
+      display: block;
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 50%;
+      border: 2px solid #0d6fbf;
+      background: #fff url("../node_modules/base_images/icon_search_hlj.png") no-repeat center/0.13rem; }
+
+.banner {
+  width: 100%;
+  height: calc(4.06rem + 1.4rem); }
+  .banner::before {
+    content: '';
+    display: block;
+    height: 1.4rem;
+    width: 100%; }
+  .banner .back {
+    width: 100%;
+    height: 4.06rem;
+    box-sizing: border-box;
+    padding: 0 0.22rem; }
+    .banner .back ul.img {
+      height: 3.84rem;
+      width: 100%;
+      position: relative; }
+      .banner .back ul.img li {
+        width: 95%;
+        height: 3.22rem;
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto; }
+        .banner .back ul.img li a {
+          width: 100%;
+          height: 100%;
+          display: block; }
+          .banner .back ul.img li a img {
+            border: 1px solid #fff;
+            border-radius: 8px;
+            display: block;
+            width: 100%;
+            height: 100%; }
+      .banner .back ul.img li:nth-Child(2) {
+        width: 100%;
+        z-index: 1;
+        height: 2.84rem; }
+  .banner .click {
+    width: 10%;
+    height: 0.23rem;
+    margin: 0 auto; }
+    .banner .click li {
+      float: left;
+      width: 0.2rem;
+      height: 100%; }
+      .banner .click li span {
+        width: 0.08rem;
+        height: 0.08rem;
+        display: block;
+        border-radius: 50%;
+        border: 1px solid #008cff;
+        box-sizing: border-box; }
+      .banner .click li.hot span {
+        background: #008cff; }
+
+main {
+  width: 100%;
+  height: auto; }
+  main .newbook {
+    width: 100%;
+    height: 4.78rem;
+    margin-bottom: 0.1rem; }
+    main .newbook .new-con {
+      width: 100%;
+      overflow: hidden;
+      height: calc(100% - 0.84rem);
+      box-sizing: border-box;
+      padding: 0 0.22rem; }
+      main .newbook .new-con ul {
+        width: 200%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap; }
+      main .newbook .new-con li {
+        width: 2.5rem;
+        height: 3.6rem;
+        box-shadow: 0 0 5px #666;
+        margin-right: 0.2rem;
+        margin-top: 0.15rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background: url(../node_modules/base_images/yq-22.png) center bottom/2.5rem 3.6rem no-repeat; }
+      main .newbook .new-con .newimg {
+        width: 2.09rem;
+        height: 2.78rem;
+        position: absolute;
+        top: -0.15rem;
+        border: 1px solid #fff; }
+        main .newbook .new-con .newimg img {
+          width: 100%;
+          height: 100%; }
+      main .newbook .new-con .text {
+        width: 100%;
+        height: 0.95rem;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-between; }
+        main .newbook .new-con .text h3 {
+          font-size: 0.24rem;
+          color: #333333; }
+        main .newbook .new-con .text span {
+          font-size: 0.18rem;
+          color: #999;
+          font-variant-caps: all-petite-caps; }
+  main .recently {
+    width: 100%;
+    height: 5.71rem; }
+    main .recently .new {
+      height: 1rem; }
+      main .recently .new .img {
+        background: #ffc63e url("../node_modules/base_images/icon_read_hlj.png") no-repeat center/0.25rem; }
+    main .recently .rec-con {
+      width: calc(100% - 0.48rem);
+      height: 4.72rem;
+      box-sizing: border-box;
+      margin: 0 0.24rem; }
+      main .recently .rec-con li {
+        width: 100%;
+        height: 2.21rem;
+        background: #fff;
+        border-radius: 0.2rem;
+        display: flex;
+        margin-bottom: 0.16rem;
+        justify-content: space-between; }
+    main .recently .con-img {
+      width: 1.65rem;
+      height: 2.22rem;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding: 0.14rem; }
+      main .recently .con-img img {
+        width: 100%;
+        height: 100%; }
+    main .recently .content {
+      flex: 1;
+      height: 100%;
+      padding-left: 0.06rem; }
+      main .recently .content a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around; }
+      main .recently .content h3 {
+        line-height: 1.4;
+        font-size: 0.28rem;
+        color: #333333; }
+      main .recently .content span {
+        width: 100%;
+        display: block;
+        height: 0.3rem;
+        overflow: hidden;
+        font-size: 0.16rem;
+        color: #999999; }
+      main .recently .content .dian {
+        width: 3.39rem;
+        height: 1px;
+        margin: 0.05rem 0;
+        border-bottom: 1px dotted  #999; }
+      main .recently .content h4 {
+        width: 100%;
+        height: 0.34rem;
+        display: block;
+        line-height: 1.2;
+        font-size: 0.22rem;
+        color: #666; }
+      main .recently .content p {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 0.2rem;
+        height: 0.6rem;
+        line-height: 1.2;
+        font-size: 0.16rem;
+        color: #999999;
+        overflow: hidden; }
+      @media screen and (max-width: 350px) {
+        main .recently .content p {
+          height: 0.67rem; } }
+      main .recently .content .fuzhu {
+        width: 100%;
+        height: 0.44rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        main .recently .content .fuzhu .jingdu {
+          width: 60%;
+          height: 100%;
+          display: flex;
+          align-items: center; }
+          main .recently .content .fuzhu .jingdu p {
+            width: 35%;
+            height: auto;
+            font-size: 0.16rem;
+            display: flex;
+            line-height: 1.5;
+            justify-content: flex-start; }
+            main .recently .content .fuzhu .jingdu p span {
+              width: auto;
+              display: block;
+              color: #1fb6ea; }
+          @media screen and (max-width: 350px) {
+            main .recently .content .fuzhu .jingdu p {
+              width: 45%; } }
+          main .recently .content .fuzhu .jingdu .tiao {
+            width: 55%;
+            height: 0.06rem;
+            background: #d4d4d4; }
+            main .recently .content .fuzhu .jingdu .tiao .blue {
+              width: 0.6rem;
+              height: 0.06rem;
+              background: #94d1e6; }
+        main .recently .content .fuzhu .click-look {
+          width: 30%;
+          height: 0.45rem;
+          background: #29a5db;
+          border-radius: 0.5rem;
+          font-size: 0.22rem;
+          color: #fff;
+          text-align: center;
+          line-height: 0.45rem;
+          cursor: pointer;
+          position: relative; }
+          main .recently .content .fuzhu .click-look::after {
+            content: "";
+            width: 3px;
+            height: 3px;
+            position: absolute;
+            left: 0.08rem;
+            top: 40%;
+            display: block;
+            border-radius: 50%;
+            background: #75cdf3; }
+          main .recently .content .fuzhu .click-look::before {
+            content: "";
+            display: block;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0.16rem;
+            top: 40%;
+            background: #4eb9e8; }
+
+.new {
+  width: 100%;
+  height: 0.84rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-left: 0.22rem; }
+  .new .title, .new p {
+    height: 0.32rem;
+    display: flex; }
+  .new p {
+    font-size: 0.18rem;
+    padding-left: 0.45rem;
+    color: #a4a4a4;
+    font-variant-caps: all-petite-caps; }
+  .new h1 {
+    font-size: 0.3rem; }
+  .new .img {
+    width: 0.32rem;
+    height: 0.32rem;
+    margin-right: 0.15rem;
+    border-radius: 50%;
+    background: #ffc63e url("../node_modules/base_images/icon_collect_hlj.png") no-repeat center/0.25rem; }
+  .new .img1 {
+    width: 0.3rem;
+    height: 100%;
+    margin-left: 0.2rem;
+    background: url("../node_modules/base_images/st_05.png") no-repeat left bottom/0.3rem; }
+
+footer {
+  width: 100%;
+  height: 1rem;
+  background: #151c2b;
+  position: fixed;
+  bottom: 0; }
+  footer ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between; }
+    footer ul li {
+      flex: 1;
+      height: 100%;
+      border-right: 1px solid #717171;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      footer ul li .fool-img {
+        width: 0.46rem;
+        height: 0.54rem;
+        background: url(../node_modules/base_images/icon_bookshelf_white.png) center/0.46rem 0.54rem no-repeat; }
+      footer ul li p {
+        font-size: 0.24rem;
+        color: #fff;
+        line-height: 1.5; }
+    footer ul li.click {
+      background: url(../node_modules/base_images/footer_current.png) center/cover no-repeat; }
+    footer ul li:nth-child(2) .fool-img {
+      background: url(../node_modules/base_images/icon_bookcity_grey.png) center/0.46rem 0.54rem no-repeat; }
+    footer ul li:nth-child(2) p {
+      color: #67686a; }
+    footer ul li:nth-child(3) .fool-img {
+      background: url(../node_modules/base_images/geren14.png) center/0.46rem 0.54rem no-repeat; }
+    footer ul li:nth-child(3) p {
+      color: #67686a; }
