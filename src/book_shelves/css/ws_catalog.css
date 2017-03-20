@@ -1,0 +1,65 @@
+.nav {
+  width: 100%;
+  height: 1rem;
+  padding: 0 0.24rem;
+  background: #29a6dc;
+  position: fixed; }
+  .nav .back {
+    width: 0.44rem;
+    height: 100%;
+    background: url("../images/ws-back.png") center center no-repeat;
+    background-size: 0.44rem 0.44rem;
+    float: left; }
+  .nav .list {
+    width: 5.7rem;
+    height: 0.8rem;
+    padding: 0.07rem;
+    float: left;
+    background: #2a3441;
+    margin: 0.1rem 0.2rem;
+    border-radius: 0.4rem; }
+    .nav .list li {
+      float: left;
+      width: 1.60rem;
+      height: 0.66rem;
+      margin-right: 0.36rem; }
+    .nav .list .active {
+      background: url("../images/ws_muluon_03.png") no-repeat center center;
+      background-size: 1.60rem 0.66rem; }
+    .nav .list li:nth-child(2) {
+      background: url("../images/ws_shuqian_05.png") no-repeat center center;
+      background-size: 1.60rem 0.7rem;
+      border-left: 1px solid #c0c0c0;
+      border-right: 1px solid #c0c0c0; }
+    .nav .list li:last-child {
+      margin-right: 0;
+      background: url("../images/ws_biji_07.png") no-repeat center center;
+      background-size: 1.6rem 0.7rem; }
+
+.content {
+  background: #ffffff;
+  min-height: 14rem;
+  width: 100%;
+  padding-top: 1rem; }
+  .content li {
+    width: 100%;
+    height: 0.83rem;
+    border-bottom: 1px dashed #999999; }
+    .content li div {
+      float: left;
+      font-weight: 200;
+      line-height: 0.83rem; }
+    .content li div:first-child {
+      width: 15%;
+      text-align: center; }
+    .content li div:nth-child(2) {
+      width: 50%; }
+      .content li div:nth-child(2) span:nth-child(2) {
+        margin-left: 0.2rem; }
+    .content li div:last-child {
+      width: 25%;
+      text-align: center; }
+  .content .active {
+    color: #357fe4; }
+    .content .active div:last-child {
+      color: #000; }
