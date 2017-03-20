@@ -19,6 +19,11 @@ html{
     width:5.866%;
     height:44%;
     background:url("../../../node_modules/base_images/st_back.png")no-repeat center/contain;
+    a{
+      width:100%;
+      height:100%;
+      display: block;
+    }
   }
   .new-book{
     display: flex;
