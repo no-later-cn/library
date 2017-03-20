@@ -21,19 +21,8 @@ header{
     font-size:0.45rem;
   }
   .underline{
-    height:0.2rem;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    .dian{
-      background:#FFFEFE;
-      width:0.04rem;height:0.04rem;
-      border-radius:50%;
-    }
-    .xian{
-      width:0.28rem;height:0.02rem;
-      background:#FFFEFE;
-    }
+    width:100%;height:0.1rem;
+    background:url(../images/xian.png) center no-repeat;
   }
   h2{
     text-align:center;
@@ -47,28 +36,32 @@ header{
     top:0.35rem;left:0.3rem;
     width:0.60rem;height:0.60rem;
     border-radius:50%;
-    background:url(../../../node_modules/base_images/ws_backbtn.png) center/cover no-repeat;
+    background:url(../images/return.png) center/cover no-repeat;
   }
+}
+.tips{
+  height:0.52rem;width:100%;
+  line-height:0.52rem;
+  text-align:center;
+  font-size:0.24rem;
+  color:#A8A8A8;
+  background:#E5E5E5;
+  position:fixed;
+  top:1.2rem;
+  left:0;
 }
 .note-body{
   flex:1;
-  margin:1.2rem 0 1.28rem;
-  .tips{
-    line-height:0.52rem;
-    text-align:center;
-    font-size:0.24rem;
-    color:#A8A8A8;
-    background:#E5E5E5;
-  }
+  margin:1.72rem 0 1.28rem;
   .list-note1{
-    height:2.44rem;
+    height:2.2rem;
     display:flex;
     align-items:center;
-    border-bottom:1px dashed #999999;
+    border-bottom:2px dotted #999999;
     padding-top:0.1rem;
     .imgbox{
       width:1.4rem;height:0.85rem;
-      background:url(../../../node_modules/base_images/ws_qianbi_03.png) center/contain no-repeat;
+      background:url(../images/notemark_caibi.png) center/contain no-repeat;
     }
     .contain{
       flex:1;
@@ -84,13 +77,13 @@ header{
         color:#808080;
       }
       .note{
-        width:86%;height:1.2rem;
+        width:86%;
         display:flex;
         align-items:flex-start;
       }
       .note .imgbox{
         width:0.43rem;height:0.43rem;
-        background:url(../../../node_modules/base_images/ws_smallqianbi_03.png) center/contain no-repeat;
+        background:url(../images/hui_pan.png) center no-repeat;
       }
       .note .text{
         flex:1;
@@ -117,20 +110,25 @@ header{
         }
         span.watch{
           width:0.26rem;height:0.26rem;
-          background:url(../../../node_modules/base_images/ws_time.png) center/cover no-repeat;
+          background:url(../images/blue_watch.png) center/cover no-repeat;
         }
         span.eye{
           width:0.34rem;height:0.26rem;
-          background:url(../../../node_modules/base_images/ws_eye.png) center/contain no-repeat;
+          background:url(../images/red_eye.png) center/contain no-repeat;
         }
       }
     }
   }
-  .list-note1:nth-of-type(2){
+  .list-note1:nth-of-type(1){
     border-bottom:0;
+    height:2.44rem;
     .contain .note{
+      height:1.2rem;
       padding:0.16rem;
-      background:url(../../../node_modules/base_images/ws_bg11_03.png) center/cover no-repeat;
+      background:url(../images/note.png) center/cover no-repeat;
+      .imgbox{
+        background:url(../images/pink_pan.png) center no-repeat;
+      }
     }
   }
   .list-note2{
@@ -138,7 +136,7 @@ header{
     display:flex;
     align-content:center;
     padding-top:0.12rem;
-    background:url(../../../node_modules/base_images/3_50.png) center/contain no-repeat;
+    background:url(../images/note_manager.png) center/contain no-repeat;
     .contain{
       flex:1;
       .center{
@@ -156,13 +154,13 @@ header{
         color:#F4F4F4;
       }
       .note{
-        height:1rem;
+        margin-top:0.1rem;
         display:flex;
         align-items:flex-start;
       }
       .note .imgbox{
         width:0.43rem;height:0.43rem;
-        background:url(../../../node_modules/base_images/ws_baibi_03.png) center/contain no-repeat;
+        background:url(../images/white_pan.png) center no-repeat;
       }
       .note .text{
         flex:1;
@@ -188,17 +186,18 @@ header{
           margin-left:0.3rem;
         }
         span.watch{
-          width:0.4rem;height:0.4rem;
-          background:url(../../../node_modules/base_images/ws_time_07.png) center/cover no-repeat;
+          width:0.26rem;height:0.26rem;
+          background:url(../images/white_watch.png) center/contain no-repeat;
         }
         span.eye{
-          width:0.4rem;height:0.34rem;
-          background:url(../../../node_modules/base_images/ws_baiyan_10.png) center/cover no-repeat;
+          width:0.34rem;height:0.26rem;
+          background:url(../images/white_eye.png) center/contain no-repeat;
         }
       }
     }
     .cancel{
       width:12%;
+      background:url(../images/close.png) center no-repeat;
     }
   }
 }
