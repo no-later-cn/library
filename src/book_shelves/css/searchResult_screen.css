@@ -1,0 +1,95 @@
+@charset "UTF-8";
+.screening .classify li > a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto; }
+
+.screening .sort > ul {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+/*遮罩开始*/
+.shade {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.75); }
+
+/*遮罩结束*/
+/*筛选开始*/
+.screening {
+  width: 100%;
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  z-index: 100;
+  border-radius: 30px;
+  padding-bottom: 18px;
+  background-color: #fff; }
+  .screening .sort {
+    width: 100%;
+    height: 1.18rem;
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    position: relative; }
+  .screening .sort > ul {
+    width: 76%;
+    height: 0.84rem;
+    background: url("../images/screen_header_hlj.png") center center no-repeat;
+    background-size: contain;
+    border-radius: 20px;
+    background-color: #2a3441;
+    padding: 4px; }
+    .screening .sort > ul li.active {
+      background-color: #29a6dc;
+      border: 1px solid #fff; }
+    .screening .sort > ul li {
+      width: 2.39rem;
+      height: 100%;
+      border-radius: 15px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+      .screening .sort > ul li a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+    .screening .sort > ul li.synthesize {
+      float: left;
+      background-image: url("../images/sort_synthesize.png"); }
+    .screening .sort > ul li.time {
+      float: right;
+      background-image: url("../images/sort_time.png"); }
+  .screening .classify {
+    padding-top: 15px; }
+    .screening .classify li {
+      width: 33.3333%;
+      height: 0.44rem;
+      float: left;
+      margin-bottom: 0.36rem;
+      position: relative; }
+      .screening .classify li > a {
+        width: 70%;
+        height: 100%;
+        border: 1px solid #2a3441;
+        border-radius: 0.2rem;
+        text-align: center;
+        line-height: 0.4rem;
+        font-size: 12px;
+        color: #2a3441; }
+    .screening .classify .active > a {
+      border: none;
+      background-color: #29a6dc;
+      color: #fff; }
+
+/*筛选结束*/
+
+/*# sourceMappingURL=searchResult_screen.css.map */

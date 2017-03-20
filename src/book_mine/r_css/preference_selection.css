@@ -1,0 +1,65 @@
+@import url("r_base.css");
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+header {
+  background-image: url("../r_images/preference_t.png"); }
+
+main {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  main .options {
+    width: 95%;
+    height: 74%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    main .options .row button {
+      padding: 0.15rem 0.519rem;
+      border-radius: 0.5rem;
+      border: 1px solid #484848;
+      background-color: transparent; }
+    main .options .row .hot {
+      border: none;
+      background-color: #29A6DC;
+      color: #fff;
+      position: relative; }
+      main .options .row .hot::after, main .options .row .hot::before {
+        content: "..";
+        position: absolute;
+        color: #fff;
+        line-height: 0;
+        font-weight: 700;
+        top: 45%;
+        left: .2rem; }
+      main .options .row .hot::before {
+        left: auto;
+        right: .2rem; }
+  main .start {
+    width: 80%;
+    height: 0.9rem;
+    border-radius: 0.5rem;
+    background-color: #28DD8B;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    position: relative; }
+    main .start::after, main .start::before {
+      content: "";
+      position: absolute;
+      width: .1rem;
+      height: .1rem;
+      background: #fff;
+      border-radius: 50%;
+      left: .5rem;
+      top: 48%; }
+    main .start::before {
+      left: auto;
+      right: .5rem; }
