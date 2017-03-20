@@ -8,6 +8,11 @@
   font-style: normal;
   text-decoration: none; }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
 img {
   border: 0; }
 
@@ -41,8 +46,7 @@ img {
   margin-right: 0.3rem; }
 
 .nt-content {
-  background: #ffe7a7;
-  min-height: 14rem; }
+  background: #ffe7a7; }
 
 .nt-content .nt-con {
   padding-top: 1.4rem;
@@ -51,15 +55,15 @@ img {
   padding-bottom: 0.25rem; }
 
 .nt-content .nt-con h1 {
-  font-size: 0.3rem;
+  font-size: 0.5rem;
   font-weight: bold; }
 
 .nt-content .nt-con p {
   text-indent: 2em;
-  font-size: 0.14rem;
+  font-size: 0.33rem;
   margin-top: 0.25rem;
-  line-height: 0.26rem;
-  padding-left: 0.26rem;
+  line-height: 0.5rem;
+  padding-left: 0.31rem;
   padding-right: 0.26rem; }
 
 .nt-bottom {
@@ -72,7 +76,7 @@ img {
   padding: 0 0.24rem; }
 
 .nt-up-down {
-  width: 6.64rem;
+  width: 100%;
   height: 0.24rem;
   margin: 0.2rem auto; }
 
@@ -85,7 +89,7 @@ img {
   text-align: center; }
 
 .nt-up-down li:nth-child(1) span, .nt-up-down li:nth-child(3) span {
-  font-size: 0.24rem;
+  font-size: 0.32rem;
   color: #c6c6c6; }
 
 .nt-up-down li:nth-child(2) {
@@ -119,14 +123,14 @@ img {
   width: 0.74rem;
   line-height: 0.31rem;
   text-align: center;
-  font-size: 0.12rem;
-  margin-left: 0.2rem;
+  font-size: 0.26rem;
+  margin-left: 0.3rem;
   color: #ffffff;
   border: 0.02rem solid #c0c0c0;
   border-radius: 2px; }
 
 .nt-set {
-  width: 6.2rem;
+  width: 100%;
   height: 0.5rem;
   margin: 0.5rem auto; }
 
@@ -135,20 +139,20 @@ img {
   height: 100%; }
 
 .nt-set li span {
-  font-size: 0.12rem;
+  font-size: 0.32rem;
   text-align: center;
-  color: #c6c6c6;
-  margin-bottom: 0.1rem; }
+  color: #c6c6c6; }
 
 .nt-set li input {
-  margin-top: 0.12rem; }
+  margin-top: 0.08rem; }
 
 .nt-set .nt-protect {
-  float: left; }
+  float: left;
+  margin-left: .2rem; }
 
 .nt-set .nt-light {
   float: right;
-  margin-right: -.7rem; }
+  /* margin-right: -.6rem;*/ }
 
 .nt-book {
   width: 0.95rem;

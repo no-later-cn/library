@@ -11,6 +11,11 @@
 img{
 	border: 0;
 }
+body{
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+}
 .nav {
   width: 100%;
   height: 1.2rem;
@@ -31,13 +36,13 @@ img{
     background: url("../../../node_modules/base_images/ws_wodebiji_03.png") no-repeat center center;
     background-size: contain;
     float: left;
-    margin-left: 2rem;
-    margin-top: 0.12rem; 
+    margin-left: 3.3rem;
+    margin-top: 0.22rem; 
 }
 
 .content {
   background: #ffffff;
-  min-height: 14rem;
+  flex：1;
   padding-top: 1.3rem;
 }
 .content .time {
@@ -58,7 +63,7 @@ img{
     line-height: 0.4rem;
 }
 .content .time .year span {
-   	font-size: 0.16rem;
+   	font-size: 0.24rem;
     margin-right: 0.1rem; 
 }
 .content .text {
@@ -67,8 +72,10 @@ img{
     padding: 0 0.24rem;
     margin-top: 0.2rem;
     color:#ccc;
+
 }
 .content .text #text {
+    font-size: 0.32rem;
     resize: none;
     width: 100%;
     height: 3.3rem;
@@ -87,7 +94,8 @@ img{
     height: 2rem;
     border-radius: 0.1rem;
     box-shadow: 1px 1px 1px 3px #eeeeee;
-    color: #ccc; 
+    color: #ccc;
+    font-size: 0.32rem; 
 }
 .content .btn {
     width: 5.15rem;

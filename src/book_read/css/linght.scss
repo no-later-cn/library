@@ -8,11 +8,16 @@
   	font-style: normal;
   	text-decoration: none; 
 }
+body{
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+}
 img{
 	border: 0;
 }
 .nt-nav{
-	width: 100%;
+    width: 100%;
   	height: 1.2rem;
   	padding: 0 0.24rem;
   	background: #29a6dc;
@@ -33,7 +38,7 @@ img{
     float: right; 
 }
 .nt-add-tag{
-	width: 0.44rem;
+    width: 0.44rem;
     height: 100%;
     background: url("../../../node_modules/base_images/ws_add-tag.png") center center no-repeat;
     background-size: 0.44rem 0.44rem;
@@ -42,7 +47,6 @@ img{
 }
 .nt-content {
   	background: #ffe7a7;
- 	  min-height: 14rem;
 }
 .nt-content .nt-con {
 	padding-top: 1.4rem;
@@ -51,15 +55,15 @@ img{
 	padding-bottom: 0.25rem;
 }
 .nt-content .nt-con h1 {
-    font-size: 0.3rem;
+    font-size: 0.5rem;
     font-weight: bold; 
 }
 .nt-content .nt-con p {
     text-indent: 2em;
-    font-size: 0.14rem;
+    font-size: 0.33rem;
     margin-top: 0.25rem; 
-    line-height: 0.26rem;
-    padding-left: 0.26rem;
+    line-height: 0.5rem;
+    padding-left: 0.31rem;
     padding-right: 0.26rem;
 }
 .nt-bottom{
@@ -68,11 +72,11 @@ img{
 	background: #151c2b;
 	position: fixed;
 	left: 0;
-  	bottom: 0;
+  bottom: 0;
  	padding: 0 0.24rem;
 }
 .nt-up-down{
-	width: 6.64rem;
+	width: 100%;
 	height: 0.24rem;
 	margin: 0.2rem auto;
 }
@@ -80,13 +84,13 @@ img{
 	float: left;
 }
 .nt-up-down li:nth-child(1),.nt-up-down li:nth-child(3){
-	width: 10%;
+    width: 10%;
     line-height: 0.24rem;
     text-align: center;
 
 }
 .nt-up-down li:nth-child(1) span,.nt-up-down li:nth-child(3) span{
-	font-size: 0.24rem;
+	font-size: 0.32rem;
     color: #c6c6c6;
 }
 .nt-up-down li:nth-child(2){
@@ -120,36 +124,36 @@ img{
 	width: 0.74rem;
     line-height: 0.31rem;
     text-align: center;
-    font-size: 0.12rem;
-    margin-left: 0.2rem;
+    font-size: 0.26rem;
+    margin-left: 0.3rem;
     color: #ffffff;
     border: 0.02rem solid #c0c0c0;
     border-radius: 2px;
 }
 .nt-set{
-	width: 6.2rem;
-    height: 0.5rem;
-    margin: 0.5rem auto;
+	width: 100%;
+  height: 0.5rem;
+  margin: 0.5rem auto;
 }
 .nt-set li{
 	width: 2rem;
-    height: 100%;
+  height: 100%;
 }
 .nt-set li span{
-	font-size: 0.12rem;
+	   font-size: 0.32rem;
     text-align: center;
     color: #c6c6c6;
-    margin-bottom: 0.1rem;
 }
 .nt-set li input{
-  margin-top: 0.12rem;
+  margin-top: 0.08rem;
 }
 .nt-set .nt-protect{
   float: left;
+  margin-left: .2rem;
 }
 .nt-set .nt-light{
   float: right;
-  margin-right: -.7rem;
+ /* margin-right: -.6rem;*/
 }
 .nt-book {
   width: 0.95rem;
