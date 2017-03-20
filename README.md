@@ -1,3 +1,0 @@
-# automatic-giggle
-Code
-ksdjfoiehgkdnvkangoieagj
