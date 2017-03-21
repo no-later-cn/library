@@ -23,13 +23,14 @@ header {
     display: block;
     border: 2px solid #0d6fbf;
     border-radius: 50%;
+    transform: rotate(180deg);
     background: #fff url("../../../node_modules/base_images/icon_return.png") no-repeat center/0.13rem; }
   header h1 {
     flex: 1;
     color: #fff;
     font-size: 0.32rem; }
   header .logo {
-    height: 3.65rem;
+    height: 3.25rem;
     display: flex;
     align-items: center;
     justify-content: center;

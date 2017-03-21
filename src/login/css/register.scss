@@ -15,7 +15,7 @@ header{
     font-family: 'PingFang Medium';
   }
   p{
-    width:46%;
+    width:44%;
     box-sizing: border-box;
     padding-left:0.38rem;
   }
@@ -25,6 +25,7 @@ header{
     display: block;
     border:2px solid #0d6fbf;
     border-radius:50%;
+    transform: rotate(180deg);
     background:#fff url("../../../node_modules/base_images/icon_return.png") no-repeat center/0.13rem;
   }
   h1{
