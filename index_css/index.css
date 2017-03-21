@@ -1,6 +1,5 @@
 @import url(../node_modules/base_css/base.css);
 body, html {
-  height: 100%;
   background: #f2f2f2;
   font-family: 'PingFang Medium'; }
 
@@ -11,7 +10,7 @@ body, html {
 
 header {
   height: 1.4rem;
-  width: 100%;
+  width: 7.5rem;
   background: #29a6dc;
   position: fixed;
   top: 0;
@@ -112,10 +111,11 @@ header {
         background: #008cff; }
 
 main {
-  width: 100%;
-  height: auto; }
+  width: 7.5rem;
+  height: auto;
+  overflow: hidden; }
   main .newbook {
-    width: 100%;
+    width: 7.5rem;
     height: 4.78rem;
     margin-bottom: 0.1rem; }
     main .newbook .new-con {
@@ -123,9 +123,9 @@ main {
       overflow: hidden;
       height: calc(100% - 0.84rem);
       box-sizing: border-box;
-      padding: 0 0.22rem; }
+      padding: 0 0 0 0.22rem; }
       main .newbook .new-con ul {
-        width: 200%;
+        width: 10rem;
         height: 100%;
         display: flex;
         flex-flow: row wrap; }
@@ -174,7 +174,7 @@ main {
         background: #ffc63e url("../node_modules/base_images/icon_read_hlj.png") no-repeat center/0.25rem; }
     main .recently .rec-con {
       width: calc(100% - 0.48rem);
-      height: 4.72rem;
+      height: 7.08rem;
       box-sizing: border-box;
       margin: 0 0.24rem; }
       main .recently .rec-con li {
@@ -338,7 +338,7 @@ main {
     background: url("../node_modules/base_images/st_05.png") no-repeat left bottom/0.3rem; }
 
 footer {
-  width: 100%;
+  width: 7.5rem;
   height: 1rem;
   background: #151c2b;
   position: fixed;

@@ -1,6 +1,5 @@
 @import "../node_modules/base_css/base.css";
 body,html{
-  height:100%;
   background: #f2f2f2;
   font-family: 'PingFang Medium';
 }
@@ -12,7 +11,7 @@ body,html{
 
 header{
   height:1.4rem;
-  width: 100%;
+  width: 7.5rem;
   background:#29a6dc;
   position:fixed;
   top:0;
@@ -131,10 +130,11 @@ header{
 }
 
 main{
-  width:100%;
+  width:7.5rem;
   height:auto;
+  overflow: hidden;
   .newbook{
-    width:100%;
+    width:7.5rem;
     height:4.78rem;
     margin-bottom: 0.1rem;
     .new-con{
@@ -142,9 +142,9 @@ main{
       overflow: hidden;
       height:calc(100% - 0.84rem);
       box-sizing: border-box;
-      padding:0 0.22rem;
+      padding:0 0 0 0.22rem;
       ul{
-        width:200%;height:100%;
+        width:10rem;height:100%;
         display: flex;
         flex-flow: row wrap;
       }
@@ -203,7 +203,7 @@ main{
     }
     .rec-con{
       width:calc(100% - 0.48rem);
-      height:4.72rem;
+      height:7.08rem;
       box-sizing: border-box;
       margin:0 0.24rem;
       li{
@@ -398,7 +398,7 @@ main{
 }
 
 footer{
-  width:100%;
+  width: 7.5rem;
   height:1rem;
   background: #151c2b;
   position: fixed;
