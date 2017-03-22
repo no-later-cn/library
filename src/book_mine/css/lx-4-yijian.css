@@ -1,0 +1,198 @@
+@charset "UTF-8";
+.zyj_header .left, .zyj_header .right, .zyj-foot .foot .foot-left, .zyj-foot .foot .foot-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0; }
+
+html {
+  font-size: 100px; }
+
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px; }
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: "苹方","SanFranciscoDisplay Regular",sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none; }
+
+img {
+  border: 0; }
+
+.row {
+  min-height: 1px; }
+  .row::after {
+    content: '';
+    clear: both; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  position: relative; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+body {
+  background: #fafafa; }
+
+.zyj_header {
+  position: relative;
+  height: 1rem;
+  width: 100%;
+  background: #29a6dc;
+  padding: 0 24px; }
+  .zyj_header .center {
+    width: 4.7rem;
+    height: 1rem;
+    margin: 0 auto; }
+    .zyj_header .center h5 {
+      color: #fff;
+      font-size: 0.36rem;
+      padding-top: 0.1rem;
+      text-align: center; }
+    .zyj_header .center h4 {
+      font-size: 0.16rem;
+      text-align: center;
+      color: #90dcff; }
+    .zyj_header .center .xian {
+      background: url("../lx_images/geren03.jpg") no-repeat center center;
+      margin: 0 auto;
+      width: 0.42rem;
+      height: 0.04rem; }
+  .zyj_header .left {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-image: url("../lx_images/shezhi01.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 24px; }
+  .zyj_header .right {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-image: url("../lx_images/geren02.jpg");
+    background-size: contain;
+    right: 24px; }
+
+.zyj_content {
+  width: 100%;
+  height: 3.61rem;
+  background: #fafafa;
+  padding-top: 0.1rem; }
+  .zyj_content .con-list {
+    width: 7.1rem;
+    height: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #ccc;
+    margin: 10px auto;
+    background: #fff; }
+    .zyj_content .con-list .neirong {
+      padding: 20px;
+      width: 100%;
+      height: 100%; }
+      .zyj_content .con-list .neirong .bianji {
+        width: 0.48rem;
+        height: 0.37rem;
+        background: url("../lx_images/yijian01.jpg") no-repeat center center;
+        background-size: contain;
+        float: left; }
+      .zyj_content .con-list .neirong .big {
+        font-size: 0.28rem;
+        height: 0.3rem;
+        display: block; }
+      .zyj_content .con-list .neirong .small {
+        font-size: 0.16rem;
+        padding-left: 0.5rem; }
+      .small{
+        color: #D0D0D0;
+      }  
+
+.zyj-foot {
+  width: 100%;
+  height: 1.54rem;
+  background: #fafafa; }
+  .zyj-foot .foot {
+    width: 5.6rem;
+    height: 0.6rem;
+    background: #28dd8b;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative; }
+    .zyj-foot .foot span {
+      font-size: 0.3rem;
+      color: #fff;
+      line-height: 0.6rem; }
+    .zyj-foot .foot .foot-left {
+      width: 0.1rem;
+      height: 0.1rem;
+      border-radius: 50%;
+      background: #fff;
+      left: 0.3rem; }
+    .zyj-foot .foot .foot-right {
+      width: 0.1rem;
+      height: 0.1rem;
+      border-radius: 50%;
+      background: #fff;
+      right: 0.3rem; }

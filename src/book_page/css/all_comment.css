@@ -51,13 +51,16 @@ header {
 
 .comment-body {
   flex: 1;
-  overflow: hidden;
-  margin: 1.2rem 0 1.28rem; }
+  overflow: hidden; }
   .comment-body ul {
-    border: 1px solid; }
+    margin: 1.2rem 0 1.28rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    min-height: 12.8rem; }
   .comment-body li.list {
     width: 90%;
-    margin: 0.3rem auto;
     height: 1.54rem;
     display: flex;
     align-items: flex-start;

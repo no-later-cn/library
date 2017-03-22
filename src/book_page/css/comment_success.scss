@@ -61,7 +61,7 @@ header{
   }
   .star{
     height:1.2rem;width:1.3rem;
-    background:url(../images/star.png) center/contain no-repeat;
+    background:url(../../../node_modules/base_images/yq-star.png) center/contain no-repeat;
   }
   .text{
     width:90%;min-height:3.25rem;
@@ -78,9 +78,7 @@ footer{
   height:5.6rem;
   width:100%;
   filter:blur(8px);
-  img{
-    width:100%;
-  }
+  background:url(../../../node_modules/base_images/keyboard.jpg) center/cover no-repeat;
 }
 .shade{
   width:100%;height:100%;
@@ -91,28 +89,22 @@ footer{
     top:0;left:0;
     bottom:0;right:0;
     margin:auto;
-    background:#fff;
     border-radius:24px;
-    width:54%;height:3.6rem;
-    overflow:hidden;
-  }
-  .popup-box-top{
-    width:100%;
-    height:1.1rem;
-    background:url(../images/tanchukuang.png) center/cover no-repeat;
+    width:54%;height:3.3rem;
+    background:url(../../../node_modules/base_images/yq-tanchu.png) center/contain no-repeat;
   }
   .status {
-    width: 70%;
-    height: 100%;
+    width: 75%;
+    height: 0.9rem;
+    margin: 0 auto;
     display: flex;
-    margin:0 auto;
     align-items: center;
     .imgbox {
       width: 0.4rem;
       height: 0.4rem;
       border-radius: 50%;
       margin-right: 0.18rem;
-      background: #fff url(../images/banben.png) center no-repeat;
+      background: #fff url(../../../node_modules/base_images/biao1.png) center no-repeat;
     }
     .wenzi{
       flex:1;
@@ -151,17 +143,14 @@ footer{
     display:flex;
     align-content:center;
     justify-content:center;
-    .cancel,.ensure,.shezhi{
-      flex:0 0 47%;
+    .cancel,.ensure{
+      flex:0 0 45%;
     }
     .cancel{
-      background:url(../images/cancel.png) center/contain no-repeat;
+      background:url(../../../node_modules/base_images/1_14.png) center/contain no-repeat;
     }
     .ensure{
-      background:url(../images/ensure.png) center/contain no-repeat;
-    }
-    .shezhi{
-      background:url(../images/shezhi.png) center/contain no-repeat;
+      background:url(../../../node_modules/base_images/yq-ture.png) center/contain no-repeat;
     }
   }
 }

@@ -1,0 +1,57 @@
+$device-list:320px 360px 375px 412px 414px 750px;
+@font-face{
+    font-family: 'PingFang Medium';
+    src:url('../fonts/PingFang Medium.ttf');
+}
+@font-face{
+    font-family: 'PingFang Regular';
+    src:url('../fonts/PingFang Regular.ttf');
+}
+html{
+    font-size:100px;
+}
+@each $width in $device-list{
+    @media screen and(min-width: #{$width}){
+        html{
+            font-size: $width/750px * 100px;
+        }
+    }
+}
+body{
+    font-size: 16px;
+}
+*{
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    font-family:"PingFang Regular","SanFranciscoDisplay Regular",sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration:none;
+}
+img{
+    border:0;
+}
+//响应式
+.row{
+    min-height:1px;
+    &::after{        // 清理浮动
+        content:'';
+        clear: both;
+    }
+}
+%float{
+    float: left;
+    position:relative;
+};
+$size:12 !default;
+@for $i from 1 through $size{
+    .col-#{$i}{
+        @extend %float;
+    }
+    .col-#{$i}{
+        width:percentage($i/$size);
+    }
+}

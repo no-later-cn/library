@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'PingFang Medium';
+    src:url('../fonts/PingFang Medium.ttf');
+}
+@font-face{
+    font-family: 'PingFang Regular';
+    src:url('../fonts/PingFang Regular.ttf');
+}
+html {
+    font-size: 100px; }
+
+@media (min-width: 320px) {
+    html {
+        font-size: 42.66667px; } }
+
+@media (min-width: 360px) {
+    html {
+        font-size: 48px; } }
+
+@media (min-width: 375px) {
+    html {
+        font-size: 50px; } }
+
+@media (min-width: 412px) {
+    html {
+        font-size: 54.93333px; } }
+
+@media (min-width: 414px) {
+    html {
+        font-size: 55.2px; } }
+
+@media (min-width: 750px) {
+    html {
+        font-size: 100px; } }
+
+body {
+    font-size: 16px; }
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family:"PingFang Regular","SanFranciscoDisplay Regular",sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none; }
+
+img {
+    border: 0; }
+
+.row {
+    min-height: 1px; }
+.row::after {
+    content: '';
+    clear: both; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    float: left;
+    position: relative; }
+
+.col-1 {
+    width: 8.33333%; }
+
+.col-2 {
+    width: 16.66667%; }
+
+.col-3 {
+    width: 25%; }
+
+.col-4 {
+    width: 33.33333%; }
+
+.col-5 {
+    width: 41.66667%; }
+
+.col-6 {
+    width: 50%; }
+
+.col-7 {
+    width: 58.33333%; }
+
+.col-8 {
+    width: 66.66667%; }
+
+.col-9 {
+    width: 75%; }
+
+.col-10 {
+    width: 83.33333%; }
+
+.col-11 {
+    width: 91.66667%; }
+
+.col-12 {
+    width: 100%; }
